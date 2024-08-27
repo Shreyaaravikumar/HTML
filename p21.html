@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Dynamic Marquee tag</title>
+        <style>
+        #testMarquee{
+            padding: 20px;
+            background-color: rgb(151, 119, 16);
+            border: 2px solid darkcyan;
+            color: rgb(2,59,59);
+            margin:20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2rem;
+        }
+        </style>
+    </head>
+    <body>
+        <center><h1>Dynamic Marquee tag in html using simple javascript</h1></center>
+
+        <marquee behaviour="scroll" direction="left" scrollamount="30" td="testMarquee">
+       <h1>SHREYAAAA</h1>
+        </marquee>
+
+        <script>
+            const testMarquee = document.getElementById('testMarquee');
+            //console.Log('hello');
+            // alert('user hovering to marquee');
+
+            testMarquee.onmouseover = function(){
+                //alert('user hovering to marquee')
+                testMarquee.stop();
+                testMarquee.style.backgroundColor = "rgb(255,57,57)";
+                testMarquee.style.border='2px solid rgb(178,0,0)';
+                testMarquee.style.color="rgb(178,0,0)";
+            
+            }
+            testMarquee.onmouseover = function() {
+                //alert('user hovering to marquee')
+                testMarquee.start();
+                testMarquee.style.backgroundColor = "lightskyblue";
+                testMarquee.style.border='2px solid darkcyan';
+                testMarquee.style.color="rgb(2,59,59)";
+            }
+        </script>
+    </body>
+</html>

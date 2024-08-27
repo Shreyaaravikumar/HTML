@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>HTML List</title>
+        <style>
+            /*displaying text or emoji's instead of markers */
+            .emoji li::marker{
+                content: "😍";  /*press win+;*/
+            }
+
+            .emoji li:nth-child(2)::marker{
+                content: "❤️";
+            }
+
+            .emoji li:nth-child(3)::marker{
+                content: "😁";
+            }
+
+            /* displaying images instead of markers*/
+            li:last-child{
+                list-style-image: url(./heart.png);
+            }
+        </style>
+    </head>
+<body>
+    <h1>Ordered or Numbered List</h1>
+    <ol type ="1" start="10">
+        <li>This is the 1st list item</li>
+        <li>This is the 2nd list item</li>
+        <li><h>This is the 3rd list item</h></li>
+    </ol>
+
+    <ol type ="I" start="4">
+        <li>This is the 1st list item</li>
+        <li>This is the 2nd list item</li>
+        <li><h>This is the 3rd list item</h></li>
+    </ol>
+
+    <ol type ="i" start="3">
+        <li>This is the 1st list item</li>
+        <li>This is the 2nd list item</li>
+        <li><h>This is the 3rd list item</h></li>
+    </ol>
+
+    <ol type ="A" start="5">
+        <li>This is the 1st list item</li>
+        <li>This is the 2nd list item</li>
+        <li><h>This is the 3rd list item</h></li>
+    </ol>
+
+    <ol type ="a" start="100">
+        <li>This is the 1st list item</li>
+        <li>This is the 2nd list item</li>
+        <li><h>This is the 3rd list item</h></li>
+    </ol>
+    <hr>
+
+    <h1>Nested ordered list(inside the order list another one ordered list)</h1>
+    <ol style="background-color: aquamarine;padding:30px;border:3px solid darkcyan;">
+        <li>
+            <b><big>HTML</big></b>
+            <ol type="a">
+                <li>HTML</li>
+                <LI>HTML5</LI>
+            </ol>
+        </li><br>
+
+        <li>
+            <b><big>CSS</big></b>
+            <ol type="a">
+                <li>CSS</li>
+                <LI>CSS3</LI>
+            </ol>
+        </li><br>
+
+    </ol>
+
+    <h1> 2) Unordered or Bullet List</h1>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JS</li>
+        <li>React JS</li>
+    </ul>
+    <hr>
+    <ul type="disc" class="emoji">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JS</li>
+        <li>React JS</li>
+    </ul>
+
+    <ul type="square">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JS</li>
+        <li>React JS</li>
+    </ul>
+
+    <ul type="circle">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JS</li>
+        <li>React JS</li>
+    </ul>
+
+
+    <ul type="none">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JS</li>
+        <li>React JS</li>
+    </ul>
+<hr><hr>
+
+<h1>3) Discription List</h1>
+
+<dl style="color: blue;background-color: aqua; border-radius: 4px solid #111;">
+    <dt>HTML</dt>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis qui minima facere eveniet quidem labore quis tenetur, similique eum ex repudiandae possimus veritatis dicta, autem officiis sit accusantium impedit illo.</dd>
+    <hr>
+    <dt>CSS</dt>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis qui minima facere eveniet quidem labore quis tenetur, similique eum ex repudiandae possimus veritatis dicta, autem officiis sit accusantium impedit illo.</dd>
+</dl>
+<dt><b><abbr title="Lojod;lfhhvihvihfhufhbifdlh">ADDRESS</abbr></b></dt>
+    <dd><adress>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non provident, minus earum facere vitae corporis officia dicta rem doloremque quam laudantium praesentium laborum asperiores sint culpa porro architecto, ad iste?</adress></dd>
+     
+    
+</body>
+</html>
